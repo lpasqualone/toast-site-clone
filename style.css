@@ -129,7 +129,7 @@ nav ul li .sale {
     margin-right: 40px;
 }
 
-.small-container{
+.header-container{
     display: inline-block;
 }
 
@@ -156,4 +156,198 @@ nav ul li .sale {
     justify-content: space-between;
   }
 
-/* ------ media queries -------*/
+/* ------ main body content -------*/
+
+main{
+    width: 100%;
+}
+
+.feature-content img{
+    width: 100%;
+    filter: grayscale(10%);}
+
+.summer-sale-container{
+    position: relative;
+}
+
+.feature-text{
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    color: #fefefe;
+    border: none;
+    outline: none;
+}
+
+.feature-text h2{
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #555;
+}
+
+.feature-text p{
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px #555;
+}
+
+.feature-text p:last-child{
+    padding-top: 20px;
+}
+
+.small-container{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.row{
+    margin: 2rem auto;
+}
+
+.site-feature-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+}
+
+.site-feature-grid-item{
+    padding: 2rem 0;   
+}
+
+.item-container{
+    overflow: hidden;
+}
+
+.site-feature-grid-item img{
+    transition: transform .6s ease-in-out;
+}
+
+.site-feature-grid-item img:hover{
+    transform: scale(1.03);
+}
+
+.item-home{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.item-open{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.grid-item-description h4{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* ------ Magazine -------*/
+
+.magazine-section{
+    width: 100%;
+    height: 560px;
+    background-color: #f7f6f1;
+}
+
+.section-heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+    position: relative;
+    top: 50px;
+}
+
+.col-3{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+}
+
+.section-heading h3{
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.section-heading h4{
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-underline-offset: 1.5px;
+    padding-top: 5px;
+}
+
+.feature-story-grid{
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.story-description h4 p{
+    max-width: 360px;
+}
+
+.item-container img{
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform .6s ease-in-out;
+}
+
+.item-container img:hover{
+    transform: scale(1.03);
+}
+
+.story-description h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.story-description p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ------ Bottom section -------*/
+
+.section-about-toast{
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.small-container h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+    font-size: 26px;
+    font-weight: 100;
+    padding-top: 30px;
+    text-align: center;
+    transform: scale(1.05);
+}
+
+.about-subheading{
+    display: flex;
+    justify-content: center;
+}
+
+.about-subheading p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+.about-subheading p:last-child{
+    margin-right: 0;
+}
