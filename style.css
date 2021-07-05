@@ -7,6 +7,12 @@
 
 /* Site header announcement */
 
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
 .site-header-announcement-bar{
     max-width: 100%;
     background-color: #000;
@@ -39,6 +45,7 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
+    max-width: 200px;
 }
 
 .site-header_store-selector{
@@ -80,6 +87,7 @@ button{
     width: 100%;
     height: 75px;
     align-items: center;
+    background-color: #fff;
     border-bottom: 1px solid #ebebeb;
 }
 
@@ -257,6 +265,7 @@ main{
 .section-heading{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin: 30px 20px;
     position: relative;
     top: 50px;
@@ -280,7 +289,7 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
     text-decoration: underline;
-    text-underline-offset: 1.5px;
+    text-underline-offset: 5.5px;
     padding-top: 5px;
 }
 
@@ -317,7 +326,7 @@ main{
 
 .section-about-toast{
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: #fff;
     border-bottom: 1px solid #ebebeb;
 }
@@ -327,9 +336,11 @@ main{
     justify-content: center;
     align-items: center;
     line-height: 1.4;
-    font-size: 26px;
-    font-weight: 100;
-    padding-top: 30px;
+    font-family: 'Amiri', serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 20px;
     text-align: center;
     transform: scale(1.05);
 }
@@ -340,14 +351,159 @@ main{
 }
 
 .about-subheading p{
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-    margin-top: 50px;
-    margin-right: 60px;
+    margin-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-right: 1px solid #ebebeb;
+    height: 35px;
 }
 
 .about-subheading p:last-child{
     margin-right: 0;
+    border: none;
 }
+
+/* ------ Footer -------*/
+
+.col-4{
+    display: flex;
+}
+
+.footer-grid{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.footer-grid ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-col-1{
+    margin-left: 50px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3{
+    min-width: 220px;
+    margin-bottom: 50px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 ul li{
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+.footer-grid h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: .05rem;
+}
+
+.footer-col-4{
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+.footer-col-4 h3{
+    margin-bottom: 20px;
+}
+
+.footer-col-4 p{
+    margin-bottom: 30px;
+    max-width: 410px;
+    font-family: 'Amiri', serif;
+    font-size: 18px;
+}
+
+.footer-col-4 input{
+    margin-bottom: 30px;
+    width: 350px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Amiri', serif;
+}
+
+.footer-col-4 input:focus{
+    outline: none;
+}
+
+.footer-col-4 span{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08rem;
+}
+
+hr{
+    border-top: 1px solid #000;
+    margin-top: -25px;
+    margin-bottom: 30px;
+    width: 415px;
+}
+
+.social-icons{
+    letter-spacing: 0.3rem;
+    fill: #000;
+    cursor: pointer;
+}
+
+.social-icons:hover{
+    color: #555;
+}
+
+.footer-container{
+    margin: 0 auto;
+    max-width: 1362px;
+    width: 100%;
+}
+
+.footer-misc{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ebebeb;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    height: 70px;
+}
+
+.site-footer_store-selector{
+    align-items: center;
+    display: flex;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    max-width: 300px;
+}
+
+.site-footer_store-selector .flag-icon{
+    background-size: cover;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+}
+
+.center-misc a{
+    font-size: 14px;
+    margin: 0 1rem;
+}
+
+.center-misc {
+    display: flex;
+    align-items: center;
+}
+
+
