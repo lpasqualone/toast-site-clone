@@ -214,11 +214,11 @@ main{
 /* ------ begin shopify section -------*/
 
 .small-container{
-    width:100%;
+    max-width:100%;
 }
 
 .row{
-    margin: 2rem auto;
+    width: 100%;
 }
 
 .shopify-section{
@@ -227,11 +227,13 @@ main{
 
 .site-feature-grid{
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .site-feature-grid-item{
-    margin: 0 auto;
+    margin: 0 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;   
 }
@@ -242,21 +244,14 @@ main{
 
 .site-feature-grid-item img{
     transition: transform .6s ease-in-out;
+    padding: 0 1rem;
 }
+    
 
 .site-feature-grid-item img:hover{
     transform: scale(1.03);
 }
 
-.item-home{
-    padding-top: 40px;
-    padding-left: 40px;
-}
-
-.item-open{
-    padding-top: 40px;
-    padding-left: 40px;
-}
 
 .grid-item-description h4{
     font-size: 20px;
@@ -351,7 +346,7 @@ main{
     border-bottom: 1px solid #ebebeb;
     margin: 0 auto;
 }
-/* ---
+
 .section-about-toast h3{
     display: flex;
     justify-content: center;
@@ -363,12 +358,12 @@ main{
     margin: 40px 0;
     text-align: center;
     transform: scale(1.05);
-    position: relative;
-} ---*/
+}
 
 .about-subheading{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .about-subheading p{
@@ -380,7 +375,7 @@ main{
     letter-spacing: 1px;
     margin-top: 30px;
     padding-right: 30px;
-    padding-left: 30px;
+    padding-left: 40px;
     border-right: 1px solid #ebebeb;
     height: 35px;
 }
@@ -532,12 +527,64 @@ hr{
     align-items: center;
 }
 
+
+
+
+
+
+
 /* ------ Media Queries -------*/
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:380px){
+    .feature-text{
+        position: relative;
+    }
+    
+    .feature-text h2 {
+        font-size: 14px;
+    }
+
+    .feature-text p{
+        font-size: 12px;
+    }
+    .feature-text p:last-child{
+        display: none;
+    }
+
     .section-about-toast{
-        margin: 0 20px;
-        max-width: 400px;
+        max-width: 300px;
+    }
+    .site-feature-grid{
+        display: flex;
+        align-items: center;
+    }
+    .site-feature-grid-item img{
+        max-width: 200px;
+        width: 100%;
+        margin: 0 1rem;
+    }
+    .item-home{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    
+    .item-open{
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .feature-text{
+        position: relative;
+        top: -8.5rem;
+    }
+    
+    .feature-text h2 {
+        font-size: 18px;
+    }
+    .section-about-toast{
+        display: none;
     }
     .col-4{
         display: flex;
@@ -545,12 +592,29 @@ hr{
         position: relative;
         margin: 0 1rem;
     }
-    .about-subheading{
-        max-width: 400px;
+
+    .site-feature-grid{
+        display: flex;
+        align-items: center;
+    }
+    .site-feature-grid-item img{
+        max-width: 200px;
+        width: 100%;
+        margin: 0 1rem;
+    }
+    .item-home{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    
+    .item-open{
+        padding-top: 0;
+        padding-left: 0;
     }
 }
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:1020px) {
+    
     .col-3 {
         display: flex;
         justify-content: center;
@@ -568,45 +632,29 @@ hr{
     }
     .magazine-section{
         width: 100%;
-        background-color: #f7f6f1;
     }
+    .magazine-section .section-heading{
+        display: flex;
+        justify-content: space-s;
+    }    
     .section-about-toast h3{
         font-size: 24px;
     }
-    .about-subheading p{
-        margin-left: 20px;
-    }
+
     .site-feature-grid-item img{
-        max-width: 440px;
+        max-width: 300px;
     }
 }
 
-@media only screen and (max-width:1050px) {    
-    .col-3 {
-        display: flex;
-        justify-content: space-around;
-        margin: 10px 40px;
+@media only screen and (max-width:1200px){
+    .toast-logo img{
+        display: block;
     }
-    .feature-story-grid:last-child{
-        padding-top: 20px;
-    }
-    .magazine-section{
-        width: 100%;
-        height: 1000px;
-        background-color: #f7f6f1;
-        margin: 0 20px;
-    }
-}
 
-@media only screen and (max-width:1170px){
     .site-header-navbar, .site-header-right{
         display: none;
     }
-    .container{
-        display: flex;
-        justify-content: center;
-        
-    }
+    
     .site-header_store-selector{
         display: none;
     }
@@ -640,4 +688,20 @@ hr{
         line-height: 1.1;
     
     }
+}
+
+@media only screen and (max-width:1250px) {    
+    .col-3 {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 40px;
+    }
+    .feature-story-grid:last-child{
+        padding-top: 20px;
+    }
+    .magazine-section{
+        width: 100%;
+        height: 1000px;
+    }
+    
 }

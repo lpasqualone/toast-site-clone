@@ -1,8 +1,6 @@
 # 'TOAST' website clone
 *working project*
 
-[Live Demo](https://lpasqualone.github.io/toast-site-clone/)👈
-
 Personal project for practicing more complex, high-end webpage building -
 
 
