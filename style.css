@@ -76,8 +76,7 @@ button{
 /* Navbar */
 
 .toast-logo{
-    display: flex;
-    align-items: center;
+    display: block;
     margin: 1rem 1rem;
 }
 
@@ -103,6 +102,14 @@ nav ul li .sale {
     width: 100%;
 }
 
+.container-right{
+    display: flex;
+    position: absolute;
+    right: 0.5em;
+    top: 4.68rem;
+    max-width: 100%;
+}
+
 a{
     text-decoration: none;
     color: #555;
@@ -117,7 +124,7 @@ a{
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -130,23 +137,23 @@ a{
 
 /* Nav Dropdown menu */
 
-nav{
+.site-header-navbar{
     display: flex;
     align-items: center;
-    background: #fff;
+    background: transparent;
     position: relative;
-    top: 39px;
+    top: 2em;
     z-index: 2;
     height: 30px;
+    width: 100%;
 }
 
 
 .nav-container{
     width: 800px;
-    margin: 0 auto;
+    margin-left: 1em;
     position: relative;
-    bottom: 5px;
-    height: 40px;
+    bottom: 15px;
 }
 
 nav ul{
@@ -262,10 +269,12 @@ nav li:hover .menu-sub {
     display: flex;
     align-items: center;
     margin-right: 0.5em;
+    z-index: 0;
 }
 
-.header-container{
+.container{
     display: inline-block;
+    
 }
 
 .search-btn{
@@ -286,9 +295,7 @@ nav li:hover .menu-sub {
 }
 
 .site-navigation {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    max-width: 100%;
   }
 
 /* ------ main body content -------*/
@@ -339,6 +346,7 @@ main{
 }
 
 .row{
+    display: flex;
     width: 100%;
 }
 
@@ -386,30 +394,43 @@ main{
 
 .magazine-section{
     width: 100%;
-    height: 600px;
+    height: 700px;
     background-color: #f7f6f1;
+    display: flex;
+    justify-content: center;
 }
 
 .section-heading{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 20px 3rem;
-    position: relative;
-    top: 50px;
+    margin: 4em 2em 0;
+
+}
+
+.scrolling-wrapper{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 40px 50px;
+}
+
+@media (max-width: 720px){
+    .scrolling-wrapper {
+      overflow-x: auto;
+      margin: 20px 20px;
+    }
 }
 
 .col-3{
+    width: 30%;
     display: flex;
-    justify-content: space-around;
-    position: relative;
-    flex-wrap: wrap;
-    top: 60px;
-    margin: 0 20px;
+    justify-content: center;
+    margin-top: 4em;
+    margin-right: 3em;
 }
 
-.col-3 img{
-    margin: 0 10px;
+.col-3:first-child{
+    margin-left: 3em;
 }
 
 
@@ -429,18 +450,27 @@ main{
     padding-top: 20px;
 }
 
-.feature-story-grid{
-    max-width: 400px;
-    overflow: hidden;
+.col-3{
+    width: 410px;
 }
 
-.story-description h4 p{
-    max-width: 360px;
+.feature-story-grid{
+    width: 100%;
+}
+
+.magazine-container{
+    
+    padding: 0 0.5em;
+    max-width: 100%;
+    height: 380px;
+    display: inline-block;
+
 }
 
 .item-container img{
     object-fit: cover;
     margin-bottom: 20px;
+    width: 100%;
     transition: transform .6s ease-in-out;
 }
 
@@ -448,14 +478,17 @@ main{
     transform: scale(1.03);
 }
 
-.story-description h4 {
+.magazine-container h4 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
+    font-size: 16px;
+    margin-left: 4px;
 }
 
-.story-description p {
+.magazine-container p {
     font-size: 14px;
     margin-top: 10px;
+    margin-left: 5px;
 }
 
 /* ------ Bottom section -------*/
@@ -467,22 +500,20 @@ main{
     border-bottom: 1px solid #ebebeb;
 }
 
-.section-about-toast h3{
-    display: block;
-    margin: 2rem 2rem;
-    line-height: 1.4;
+.section-about-toast p{
     font-family: 'Amiri', serif;
     font-size: 27px;
     font-weight: 400;
+    line-height: 1.4;
     text-align: center;
-    transform: scale(1.05);
-    max-width: 100%;
+    margin-top: 1.8em;
 }
 
 .about-subheading{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .about-subheading p{
@@ -508,12 +539,20 @@ main{
 
 .footer-container{
     width: 100%;
+    display: inline-block;
 }
 
 .col-4{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
+    width: 25%;
+}
+
+.col-4:first-child{
+    margin-left: 2em;
+}
+
+.col-5{
+    width: 25%;
+    margin-right: 3em;
 }
 
 .footer-grid{
@@ -527,17 +566,6 @@ main{
     padding-left: 0;
 }
 
-.footer-grid h3 ul li{
-    max-width: 150px;
-    margin: 0;
-}
-
-.footer-col-1, .footer-col-2, .footer-col-3{
-    max-width: 220px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-}
-
 .footer-col-1, .footer-col-2, .footer-col-3 ul li{
     font-size: 14px;
     line-height: 2.5;
@@ -548,11 +576,6 @@ main{
     font-weight: 100;
     font-size: 16px;
     letter-spacing: .05rem;
-}
-
-.footer-col-4{
-    max-width: 450px;
-    margin: 50px auto;
 }
 
 .footer-col-4 h3{
@@ -590,17 +613,16 @@ hr{
     border-top: 1px solid #000;
     margin-top: -25px;
     margin-bottom: 30px;
-    width: 415px;
+    max-width: 350;
 }
 
 .social-icons{
     letter-spacing: 0.3rem;
     fill: #000;
     cursor: pointer;
-}
-
-.social-icons:hover{
-    color: #555;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    margin-left: 0.2em;
 }
 
 .footer-container{
@@ -675,10 +697,6 @@ hr{
     .feature-text p:last-child{
         display: none;
     }
-
-    .section-about-toast{
-        max-width: 300px;
-    }
     .site-feature-grid{
         display: flex;
         align-items: center;
@@ -721,10 +739,6 @@ hr{
     .feature-text p:last-child{
         display: none;
     }
-    .magazine-section .section-heading{
-        display: flex;
-        justify-content: space-around;
-    } 
     
     .col-4{
         display: flex;
@@ -765,50 +779,15 @@ hr{
     .footer-col-1, .footer-col-2, .footer-col-3 ul li{
         display: none;
     }
-}
 
-@media only screen and (max-width:700px) {
-    .footer-grid ul li{
-        width: 150px;
-        margin-right: 2rem;
-    }
-}
-
-@media only screen and (max-width:950px) {
-    
-    .col-3 {
-        display: flex;
-        justify-content: center;
-        margin: 10px 40px;
-    }
-    
-    .feature-story-grid{
-        padding-top: 40px;
-    }
-    .feature-story-grid:first-child{
-        padding-top: 0;
-    }
-    .feature-story-grid:last-child{
-        display: none;
-    }
-    .magazine-section{
+    .col-5{
         width: 100%;
+        margin-right: 30%;
+        margin-top: 1em;
     }
-    .magazine-section .section-heading{
-        display: flex;
-        justify-content: space-between;
-    }   
 
-    .site-feature-grid-item img{
-        max-width: 290px;
-    }
-    .footer-grid{
-        max-width: 400px;
-    }
-    .footer-col-4 input{
-        max-width: 200px;
-    }
 }
+
 
 @media only screen and (max-width:1060px){
     .toast-logo{
@@ -822,11 +801,11 @@ hr{
     }
     
     .site-header-right{
-        display: none;
+        display: block;
     }
     
     .site-header_store-selector{
-        display: none;
+        display: block;
     }
     .announcement-container{
         display: flex;
@@ -863,24 +842,11 @@ hr{
     .footer-grid{
         max-width: 240px;
     }
-
-    hr{
-        max-width: 240px;
-    }
 }
 
-@media only screen and (max-width:1250px) {    
-    .col-3 {
-        display: flex;
-        justify-content: space-around;
-        margin: 10px 40px;
+@media only screen and (max-width:1060px) {
+    .site-header-right,
+    .site-header_store-selector{
+        display: none;
     }
-    .feature-story-grid:last-child{
-        padding-top: 20px;
-    }
-    .magazine-section{
-        width: 100%;
-        height: 1000px;
-    }
-    
 }
