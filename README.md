@@ -35,6 +35,10 @@ Create a functional clone of https://us.toa.st/ from scratch
 
 ## **Summary**
 
+**Challenges I Faced**
+* Creating the mega menu was a new learning, and a challenge to align properly with the navbar so as not to break other parts of the navigation 
+* Creating the mobile dropdown is not usually a challenge, but I found that when I created the mega menu, it broke the usual system for how I would create a mobile menu. This required seeking out alternative plans to fix this issue.
+
 **What I learned**
 * Creating dropdown navigation bar
 * Effecient, practical use of columns systems
