@@ -16,7 +16,7 @@ header{
     background-color: #000;
     color: #fff;
     display: block;
-    height: 2rem;
+    height: 3rem;
     position: relative;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,7 +33,8 @@ header{
 .marketingStrip{
     font-size: 10.5px;
     font-weight: 300;
-    margin-left: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -82,11 +83,16 @@ button{
 
 .site-header-masthead{
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 75px;
     align-items: center;
     background-color: #fff;
     border-bottom: 1px solid #ebebeb;
+}
+
+nav ul li .sale {
+    color: #a62120;
 }
 
 .menu-hamburger{
@@ -114,33 +120,149 @@ a{
     width: 100%;
 }
 
-.site-header-navbar{
-    display: flex;
-    align-items: center;
-}
+
 
 .bag-menu-mobile{
     display: none;
 }
 
+
+
+/* Nav Dropdown menu */
+
+nav{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    position: relative;
+    border: 1px solid red;
+    top: 39px;
+    z-index: 2;
+    height: 30px;
+}
+
+
+.nav-container{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 5px;
+    height: 40px;
+}
+
 nav ul{
-    display: inline-flex;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+    position: relative;
+    text-align: left;
 }
 
-nav ul li{
+nav li{
     display: inline-block;
-    margin-right: 20px;
+    text-align: left;
 }
 
-nav ul li .sale {
-    color: #a62120;
+nav a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: .75em 0.5em;
+    line-height: 1.1;
+    color: #555;
+    font-size: 12px;
 }
+
+nav li:hover{
+    color:#fff;
+}
+
+
+.menu-sub {
+    position: absolute;
+    left: 0;
+    background: #fff;
+    color:#fff;
+    padding: 20px 0;
+    width: 100%;
+    display: none;
+    text-align: left;
+    padding: 2em;
+    z-index: 4;
+}
+
+.menu-category{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: none;
+    color: #fff;
+    margin: 2.5em 0 0.8em;
+    
+}
+
+.menu-category:first-of-type{
+    margin: 1.5em 0;
+    font-weight: 100;
+    color: #555;
+}
+
+
+nav li:hover .menu-sub {
+    display: block;
+}
+
+.menu-sub li {
+    display: block;
+}
+
+.menu-sub a{
+    padding: 0;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+    font-family: 'Amiri', serif;
+    text-transform: none;
+    font-size: 14px;
+}
+
+.menu-sub a:hover{
+    text-decoration: underline;
+    text-underline-offset: 1.5px;
+}
+
+.menu-col-1,
+.menu-col-2,
+.menu-col-3,
+.menu-col-4
+{
+    float: left;
+}
+
+.menu-col-1{
+    width: 16.6%;
+}
+
+.menu-col-2{
+    width:20%;
+}
+
+.menu-col-3{
+    width: 50%;
+}
+
+.menu-col-4{
+    width: 100%;
+}
+
+#clothing-col-2{
+    color: #fff;
+}
+
+/* Right side page menu */
 
 .site-header-right{
     display: flex;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 0.5em;
 }
 
 .header-container{
@@ -344,22 +466,18 @@ main{
     height: 300px;
     background-color: #fff;
     border-bottom: 1px solid #ebebeb;
-    margin: 0 auto;
 }
 
 .section-about-toast h3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin: 2rem 2rem;
     line-height: 1.4;
     font-family: 'Amiri', serif;
     font-size: 27px;
     font-weight: 400;
-    margin: 40px 0;
     text-align: center;
     transform: scale(1.05);
-    max-width: 600px;
-    margin: 2rem auto;
+    max-width: 100%;
 }
 
 .about-subheading{
@@ -383,7 +501,7 @@ main{
 }
 
 .about-subheading p:last-child{
-    margin-right: 0;
+    padding-right: 0;
     border: none;
 }
 
@@ -410,13 +528,15 @@ main{
     padding-left: 0;
 }
 
-.footer-col-1{
-    margin-left: 50px;
+.footer-grid h3 ul li{
+    max-width: 150px;
+    margin: 0;
 }
 
 .footer-col-1, .footer-col-2, .footer-col-3{
-    min-width: 220px;
+    max-width: 220px;
     margin-bottom: 50px;
+    margin-left: 30px;
 }
 
 .footer-col-1, .footer-col-2, .footer-col-3 ul li{
@@ -538,6 +658,10 @@ hr{
 /* ------ Media Queries -------*/
 
 @media only screen and (max-width:380px){
+    .toast-logo{
+        display: block;
+        margin: 30% !important;
+    }
     .feature-text{
         position: relative;
     }
@@ -580,7 +704,7 @@ hr{
 @media only screen and (max-width:500px) {
     .toast-logo{
         display: block;
-        margin: 40vw;
+        margin: 38% !important;
     }
 
 
@@ -601,10 +725,8 @@ hr{
     .magazine-section .section-heading{
         display: flex;
         justify-content: space-around;
-    }  
-    .section-about-toast{
-        display: none;
-    }
+    } 
+    
     .col-4{
         display: flex;
         justify-content: space-around;
@@ -630,9 +752,6 @@ hr{
         padding-top: 0;
         padding-left: 0;
     }
-    .footer-col-1, .footer-col-2, .footer-col-3 ul li{
-        display: none;
-    }
 
     .social-icons{
         margin-top: 0.5rem;
@@ -640,7 +759,23 @@ hr{
     }
 }
 
-@media only screen and (max-width:1040px) {
+@media only screen and (max-width:650px) {
+    .section-about-toast{
+        display: none;
+    }
+    .footer-col-1, .footer-col-2, .footer-col-3 ul li{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .footer-grid ul li{
+        width: 150px;
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width:950px) {
     
     .col-3 {
         display: flex;
@@ -663,10 +798,7 @@ hr{
     .magazine-section .section-heading{
         display: flex;
         justify-content: space-between;
-    }    
-    .section-about-toast h3{
-        font-size: 24px;
-    }
+    }   
 
     .site-feature-grid-item img{
         max-width: 290px;
@@ -674,15 +806,23 @@ hr{
     .footer-grid{
         max-width: 400px;
     }
+    .footer-col-4 input{
+        max-width: 200px;
+    }
 }
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1060px){
     .toast-logo{
         display: block;
-        margin: 40vw;
+        margin: 43%;
     }
 
-    .site-header-navbar, .site-header-right{
+    nav ul li a{
+        color:black;
+        font-size: 16px;
+    }
+    
+    .site-header-right{
         display: none;
     }
     
@@ -700,7 +840,8 @@ hr{
         cursor: pointer;
         position: absolute;
         left: 20px;
-        top: 55px;
+        top: 70px;
+        z-index: 2;
     }
     .bag-menu-mobile{
         display: inline-block;
@@ -708,8 +849,8 @@ hr{
         margin: auto 0;
         cursor: pointer;
         position: absolute;
-        right: 20px;
-        top: 63px;
+        right: 10px;
+        top: 80px;
         color: #555;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;

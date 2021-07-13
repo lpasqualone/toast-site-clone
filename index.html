@@ -27,7 +27,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 navbar">
-                            <button class="menu-hamburger">
+                            <button class="menu-hamburger menu-icon" onclick="menutoggle()">
                                 <i class="fas fa-bars"></i>
                             </button>
                             <button class="bag-menu-mobile">
@@ -39,15 +39,208 @@
                             </div>
                          <div class="site-navigation">
                             <nav class="site-header-navbar">
-                                <ul class="site-nav">
-                                    <li><a href="https://us.toa.st/collections/women">Women</a></li>
+
+                                <!-- Menu Main -->
+
+                                <div class="nav-container">
+                                <ul class="menu-main site-nav" id="MenuItems">
+
+                                    <li><a href="#">Women</a> 
+                                        <div class="menu-sub">
+
+                                        <div class="menu-col-1">
+                                            <h3 class="menu-category">Collection</h3>
+                                            <ul>
+                                            <li><a href="#">New In</a></li>
+                                            <li><a href="#">Favourites</a></li>
+                                            <li><a href="#">Out in the Open</a></li>
+                                            <li><a href="#">Between Seasons</a></li>      
+                                            </ul>  
+                                        </div>
+                                        <div class="menu-col-1">
+                                            <h3 class="menu-category">Clothing</h3>
+                                        <ul>
+                                            <li><a href="#">All Clothing</a></li>
+                                            <li><a href="#">Cashmere</a></li>
+                                            <li><a href="#">Coats & Jackets</a></li>
+                                            <li><a href="#">Corduroy</a></li>      
+                                            <li><a href="#">Denim</a></li>      
+                                            <li><a href="#">Dresses</a></li>      
+                                            <li><a href="#">Gowns</a></li>      
+                                            <li><a href="#">Jeans</a></li>      
+                                            <li><a href="#">Jersey</a></li>      
+                                            <li><a href="#">Jumpsuits</a></li>
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-1">
+                                            <h3 id="clothing-col-2" class="menu-category">""</h3>
+                                        <ul>
+                                            <li><a href="#">Knitwear</a></li>      
+                                            <li><a href="#">Linen</a></li>      
+                                            <li><a href="#">Loungewear</a></li>      
+                                            <li><a href="#">Nightwear</a></li>      
+                                            <li><a href="#">Shirts</a></li>      
+                                            <li><a href="#">Skirts</a></li>      
+                                            <li><a href="#">Swimwear</a></li>      
+                                            <li><a href="#">Tops & Tees</a></li>      
+                                            <li><a href="#">Workwear</a></li>  
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-1">
+                                            <h3 class="menu-category">Accessories</h3>
+                                        <ul>
+                                            <li><a href="#">All Accessories</a></li>
+                                            <li><a href="#">Bags & Belts</a></li>
+                                            <li><a href="#">Hats, Scarves & Gloves</a></li>
+                                            <li><a href="#">Jewellery</a></li>      
+                                            <li><a href="#">Socks & Tights</a></li>      
+                                            <li><a href="#">Sunglasses</a></li>   
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-1">
+                                            <h3 class="menu-category">Footwear</h3>
+                                        <ul>
+                                            <li><a href="#">All Footwear</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Shoes</a></li>      
+                                            <li><a href="#">Slippers</a></li>      
+                                            <li><a href="#">Trainers & Plimsolls</a></li>   
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-1">
+                                            <h3 class="menu-category">Gift Cards</h3>
+                                        <ul>
+                                            <li><a href="#">TOAST Gift Cards</a></li>  
+                                        </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+
                                     <li><a href="https://us.toa.st/collections/men">Men</a></li>
-                                    <li><a href="https://us.toa.st/collections/house-home">House&Home</a></li>
+
+                                    <li><a href="#">House&Home</a> 
+                                        <div class="menu-sub">
+
+                                        <div class="menu-col-2">
+                                            <h3 class="menu-category">Collection</h3>
+                                            <ul>
+                                            <li><a href="#">New In</a></li>
+                                            <li><a href="#">Favourites</a></li>
+                                            <li><a href="#">UK Made Homeware</a></li>
+                                            <li><a href="#">Made to Order</a></li>      
+                                            <li><a href="#">New Makers</a></li>      
+                                            </ul>  
+                                        </div>
+                                        <div class="menu-col-2">
+                                            <h3 class="menu-category">Homeware</h3>
+                                        <ul>
+                                            <li><a href="#">All Homeware</a></li>
+                                            <li><a href="#">Aprons & Tea Towels</a></li>
+                                            <li><a href="#">Baskets</a></li>
+                                            <li><a href="#">Bathroom</a></li>      
+                                            <li><a href="#">Bed Linen</a></li>      
+                                            <li><a href="#">Blankets & Throws</a></li>      
+                                            <li><a href="#">Candles & Candle Holders</a></li>      
+                                            <li><a href="#">Ceramics</a></li>      
+                                            <li><a href="#">Cushions & Cushion Covers</a></li>      
+                                            <li><a href="#">Decorative Pieces</a></li>
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-2">
+                                            <h3 id="clothing-col-2" class="menu-category">""</h3>
+                                        <ul>
+                                            <li><a href="#">Gifts</a></li>      
+                                            <li><a href="#">Glass</a></li>      
+                                            <li><a href="#">Kitchen</a></li>      
+                                            <li><a href="#">Outdoor</a></li>      
+                                            <li><a href="#">Rugs</a></li>      
+                                            <li><a href="#">Stationary</a></li>      
+                                            <li><a href="#">Tableware</a></li>      
+                                            <li><a href="#">Towels</a></li>      
+                                            <li><a href="#">Vases</a></li>  
+                                            <li><a href="#">Wellbeing</a></li>  
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-2">
+                                            <h3 class="menu-category">Clothing & Footwear</h3>
+                                        <ul>
+                                            <li><a href="#">Gowns</a></li>
+                                            <li><a href="#">Loungewear</a></li>
+                                            <li><a href="#">Nightwear</a></li>
+                                            <li><a href="#">Slippers</a></li>      
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-2">
+                                            <h3 class="menu-category">Gift Cards</h3>
+                                        <ul>
+                                            <li><a href="#">TOAST Gift Cards</a></li>  
+                                        </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                    
+
                                     <li><a href="https://us.toa.st/collections/sale" class="sale">Sale</a></li>
+
                                     <li><a href="https://us.toa.st/pages/events">Events</a></li>
-                                    <li><a href="https://us.toa.st/blogs/magazine">Magazine</a></li>
-                                    <li><a href="https://us.toa.st/pages/about-us">Our Approach</a></li>
+
+                                    <li><a href="https://us.toa.st/blogs/magazine">Magazine</a>
+
+                                    <div class="menu-sub">
+
+                                        <div class="menu-col-3">
+                                            <h3 class="menu-category">Categories</h3>
+                                        <ul>
+                                            <li><a href="#">All Articles</a></li>
+                                            <li><a href="#">Arts & Culture</a></li>
+                                            <li><a href="#">Book Club</a></li>
+                                            <li><a href="#">Food & Drink</a></li>
+                                            <li><a href="#">Land & Garden</a></li>
+                                            <li><a href="#">Ritual & Reflection</a></li>
+                                            <li><a href="#">Style & Stories</a></li>
+                                            <li><a href="#">Travel & Place</a></li>      
+                                        </ul>
+                                        </div>
+
+                                        <div class="menu-col-2">
+                                            <h3 class="menu-category">Audio Series</h3>
+                                        <ul>
+                                            <li><a href="#">Podcasts</a></li>  
+                                            <li><a href="#">Slow Sound</a></li>  
+                                        </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                    <li><a href="https://us.toa.st/pages/about-us">Our Approach</a>
+                                        <div class="menu-sub">
+                                        <div class="menu-col-4">
+                                        <ul>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Social Conscience</a></li>
+                                            <li><a href="#">Craft</a></li>
+                                            <li><a href="#">New Makers</a></li>
+                                            <li><a href="#">Care Guide</a></li>
+                                            <li><a href="#">Our Response to COVID-19</a></li>
+                                            <li><a href="#">Events</a></li>
+                                            <li><a href="#">International Stocklists</a></li>
+                                        </ul>
+                                        </div>
+                                    </div>
+                                    </li>
+
                                 </ul>
+                            </div>
                             </nav>
                             
                             <div class="site-header-right">
@@ -269,5 +462,28 @@
         </div>
     </div>
     </footer>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "600px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+
+
+
+    </script>
+
+
 </body>
 </html>
