@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Project: TOAST Website Clone
+=======
+# Project: Sunnyside Creative Agency
+>>>>>>> 6f78ce34e9cb7f2ff8da34ccb63bf9682ad92ec5
 
 ## **About Project**
 
@@ -35,10 +39,13 @@ Create a functional clone of https://us.toa.st/ from scratch
 
 ## **Summary**
 
+<<<<<<< HEAD
 **Challenges I Faced**
 * Creating the mega menu was a new learning, and a challenge to align properly with the navbar so as not to break other parts of the navigation 
 * Creating the mobile dropdown is not usually a challenge, but I found that when I created the mega menu, it broke the usual system for how I would create a mobile menu. This required seeking out alternative plans to fix this issue.
 
+=======
+>>>>>>> 6f78ce34e9cb7f2ff8da34ccb63bf9682ad92ec5
 **What I learned**
 * Creating dropdown navigation bar
 * Effecient, practical use of columns systems
@@ -52,6 +59,7 @@ Create a functional clone of https://us.toa.st/ from scratch
 
 ## **Screenshots**
 
+<<<<<<< HEAD
 ***Desktop**<br>
 
 ![Desktop](toastSH-desktop.png)
@@ -63,3 +71,14 @@ Create a functional clone of https://us.toa.st/ from scratch
 ***Tablet**
 
 ![Mobile](toastSH-tablet.png)
+=======
+***Desktop**
+![toastSH-desktop](https://user-images.githubusercontent.com/83058654/125377170-59913500-e341-11eb-871d-cea93c0bab55.png)
+
+***Mega Menu**
+![toastSH-mega-menu](https://user-images.githubusercontent.com/83058654/125377212-7168b900-e341-11eb-8d79-fd5f57eb8c76.png)
+
+***Tablet**
+![toastSH-tablet](https://user-images.githubusercontent.com/83058654/125377193-66ae2400-e341-11eb-9637-97f381b9d2a0.png)
+
+>>>>>>> 6f78ce34e9cb7f2ff8da34ccb63bf9682ad92ec5
