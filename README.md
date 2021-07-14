@@ -6,7 +6,7 @@
 
 Personal project for practicing more complex, high-end webpage building -
 
-Create a functional clone of https://us.toa.st/ from scratch
+Create a visual clone of https://us.toa.st/ from scratch
 
 
 # 'TOAST' website clone
