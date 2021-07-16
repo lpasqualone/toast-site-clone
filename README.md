@@ -6,11 +6,10 @@
 
 Personal project for practicing more complex, high-end webpage building -
 
-Create a functional clone of https://us.toa.st/ from scratch
+Create a visual clone of https://us.toa.st/ from scratch
 
 
 # 'TOAST' website clone
-*working project*
 
 [Live Demo](https://lpasqualone.github.io/toast-site-clone/) 👈
 
@@ -39,7 +38,9 @@ Create a functional clone of https://us.toa.st/ from scratch
 **Challenges I Faced**
 * Creating the mega menu was a new learning, and a challenge to align properly with the navbar so as not to break other parts of the navigation 
 * The magazine section was interesting to format - I didn't like how it looked with a  flex-wrap method, so created a slider for the tablet and mobile sizes instead.
-* Creating the mobile dropdown is not usually a challenge, but I found that when I created the mega menu, it broke the usual system for how I would create a mobile menu. This required seeking out alternative plans to fix this issue.
+* Creating the mobile dropdown is not usually a challenge, but I found that when I created the mega menu, it broke the usual system for how I would create a mobile menu. This required seeking out alternative plans to fix this issue. For this project, for the time being, I was only able to *visually* create the mobile menu icon. 
+
+  For future growth, a goal is to solve this problem further to make a complex, functional mobile menu as well.
 
 **What I know**
 * Creating dropdown navigation bar

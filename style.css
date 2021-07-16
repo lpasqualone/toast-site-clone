@@ -94,7 +94,7 @@ nav ul li .sale {
     color: #a62120;
 }
 
-.menu-hamburger{
+.menu-icon{
     display: none;
 }
 
@@ -152,7 +152,6 @@ a{
 .nav-container{
     width: 800px;
     margin-left: 1em;
-    position: relative;
     bottom: 15px;
 }
 
@@ -811,15 +810,13 @@ hr{
         display: flex;
         justify-content: center;
     }
-    .menu-hamburger{
+    .menu-icon{
         display: inline-block;
         font-size: 24px;
-        margin: auto 0;
         cursor: pointer;
         position: absolute;
         left: 20px;
         top: 70px;
-        z-index: 2;
     }
     .bag-menu-mobile{
         display: inline-block;
